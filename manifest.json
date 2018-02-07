@@ -1,11 +1,11 @@
 {
   "manifest_version": 2,
-  "name": "Tab Find",
+  "name": "Tab Finder",
   "description": "Any Description",
-  "short_name": "Tab Find",
+  "short_name": "Tab Finder",
   "version": "0.0.1",
   "author": "Adriano Chambel M. de Lima <acmlima.softweb@gmail.com>",
-  "homepage_url": "https://github.com/achambel/tab-find",
+  "homepage_url": "https://github.com/achambel/tab-finder",
   "minimum_chrome_version": "55",
   "permissions": [
     "tabs"
@@ -16,15 +16,16 @@
     ]
   },
   "browser_action": {
-    "default_title": "Tab Find",
+    "default_title": "Open Tab Finder",
     "default_popup": "popup.html"
   },
   "commands": {
-    "toggle-feature-foo": {
+    "open-query-form": {
       "suggested_key": {
+        "default": "Ctrl+Shift+5",
         "mac": "Command+Shift+5"
       },
-      "description": "Toggle feature foo",
+      "description": "Open Tab Finder",
       "global": true
     }
   }

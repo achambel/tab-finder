@@ -3,12 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Tab Find</title>
+  <title>Tab Finder</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"
+    media="screen,projection">
 </head>
-<body>
-  <input id="query" type="text">
-  <div id="results"></div>
+<body style="width: 768px;">
+  <div class="container">
+    <div class="input-field col s12 m12 l12">
+      <i class="material-icons prefix">search</i>
+      <input id="query" type="text" placeholder="Type for find any tab..." autofocus>
+    </div>
+    <div id="results" class="z-depth-5"></div>
+  </div>
   <script src="js/popup.js"></script>
 </body>
 </html>

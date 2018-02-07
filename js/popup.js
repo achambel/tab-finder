@@ -8,16 +8,25 @@ function searchInTabs (tabs) {
 }
 
 function renderResults (tabsFound) {
-  let list = 'Title or URL not found.';
+  let list = `<div class="card-panel teal">
+                <h5 class="center-align white-text">
+                <i class="medium material-icons">sentiment_very_dissatisfied</i>
+                Title or URL not found.
+                </h5>
+              </div>`;
   if (tabsFound.length) {
     list = tabsFound.map(t => {
-      return `<li class="tab"
+      return `<a href="#!" class="collection-item avatar tab"
                   data-tab-window-id="${t.windowId}"
                   data-tab-id="${t.id}">
-                ${t.title} (${t.url})
-              </li>`
+                <img src="${t.favIconUrl || ''}" class="circle">
+                <span class="title">${t.title}</span>
+                <p><small>${t.url}</small></p>
+              </a>`
     });
-    list = `<ul>${list.join('')}</ul>`;
+    list = `<div class="collection">
+              ${list.join('')}
+            </div>`;
   }
   document.querySelector('#results').innerHTML = list;
   document.querySelectorAll('.tab').forEach(li => {
