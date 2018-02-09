@@ -1,0 +1,4 @@
+.tab:focus {
+  background: teal;
+  color: white!important;
+}
