@@ -1,4 +1,18 @@
-.tab:focus {
-  background: teal;
+body {
+  width: 768px;
+  background: #3e474f;
+  color: white;
+}
+
+.tab:focus, .tab:hover {
+  background: teal!important;
   color: white!important;
+}
+
+.tab:nth-child(odd) {
+  background: #e0f2f1;
+}
+
+.tab:nth-child(even) {
+    background: #b2dfdb;
 }

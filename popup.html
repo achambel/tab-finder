@@ -11,20 +11,27 @@
     media="screen,projection">
   <link rel="stylesheet" href="css/default.css">
 </head>
-<body style="width: 768px;">
+<body>
   <div class="container">
-    <form id="query-form">
-      <div class="input-field col s12 m12 l12">
-        <i class="material-icons prefix">search</i>
+    <form id="query-form" class="row col s12 m12 l12">
+      <div class="valign-wrapper input-field col s8 m8 l8">
+        <img src="img/48x48.png" class="responsive-img">
         <input
+          style="margin-left: 5px; font-size: 24px;"
           id="query"
           type="text"
-          tabindex="-1"
+          tabindex="0"
           placeholder="Type for find any tab..."
           autofocus>
       </div>
+      <div class="input-field right-align col s4 m4 l4">
+        <a class="waves-effect waves-light btn">
+          <i class="material-icons">attach_money</i>
+          Donate
+        </a>
+      </div>
     </form>
-    <div id="results" class="z-depth-5"></div>
+    <div id="results"></div>
   </div>
   <script src="js/popup.js"></script>
 </body>

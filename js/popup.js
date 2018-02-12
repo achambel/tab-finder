@@ -8,19 +8,19 @@ function searchInTabs (tabs) {
 }
 
 function renderResults (tabsFound) {
-  let list = `<div class="card-panel teal">
-                <h5 class="center-align white-text">
+  let list = `<div class="card-panel teal valign-wrapper">
                 <i class="medium material-icons">sentiment_very_dissatisfied</i>
-                Title or URL not found.
+                <h5 class="center-align white-text">
+                  Title or URL not found. Enter for search the Web.
                 </h5>
               </div>`;
   if (tabsFound.length) {
     list = tabsFound.map((t, index) => {
       return `<a href="#!" class="collection-item avatar tab"
-                  tabindex="${index}"
+                  tabindex="${index++}"
                   data-tab-window-id="${t.windowId}"
                   data-tab-id="${t.id}">
-                <img src="${t.favIconUrl || ''}" class="circle">
+                <img src="${t.favIconUrl || '../img/48x48.png'}" class="circle">
                 <span class="title">${t.title}</span>
                 <p><small>${t.url}</small></p>
               </a>`
@@ -82,6 +82,10 @@ document.querySelector('#query-form').addEventListener('submit', e => {
   const itemsTab = document.querySelectorAll('.tab');
   if (itemsTab.length) {
     itemsTab[0].focus();
+  } else {
+    const text = document.getElementById('query').value;
+    const newURL = 'https://www.google.com/search?q=' + encodeURIComponent(text);
+    chrome.tabs.create({ url: newURL });
   }
 })
 
@@ -96,5 +100,8 @@ document.addEventListener('keydown', e => {
     const itemSelected = document.querySelector('.tab:focus');
     const itemsTab = document.querySelectorAll('.tab');
     selectTabItem(e, itemSelected, itemsTab);
+  }
+  else if (e.key === 'Escape') {
+    this.close();
   }
 });
