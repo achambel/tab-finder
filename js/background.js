@@ -2,8 +2,7 @@ chrome.commands.onCommand.addListener(function (command) {
   if (command === 'open-query-form') {
     var left = (window.screen.availWidth - 800) / 2;
     var top = (window.screen.availHeight - 600) / 2;
-
-    window.open("../popup.html", "Tab Finder", `width=800,height=600,status=no,scrollbars=yes,resizable=no,left=${left},top=${top}`);
+    window.open("../popup.html", `${chrome.i18n.getMessage('extName')}`, `width=800,height=600,status=no,scrollbars=yes,resizable=no,left=${left},top=${top}`); 
   }
 });
 

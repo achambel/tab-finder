@@ -1,0 +1,23 @@
+{
+  "extName": {
+    "message": "Tab Finder"
+  },
+  "extDescription": {
+    "message": "Suchen Sie nach geöffneten Tabs, indem Sie einfach ein beliebiges Wort eingeben."
+  },
+  "extShortName": {
+    "message": "Tab Finder"
+  },
+  "extDefaultTitle": {
+    "message": "Tab Finder öffnen. | Ctrl+Shift+9"
+  },
+  "query": {
+    "message": "Geben Sie ein, um einen Tab zu finden ..."
+  },
+  "donateText": {
+    "message": "Spenden"
+  },
+  "notFound": {
+    "message": "Titel oder URL nicht gefunden. Geben Sie für die Suche im Web ein."
+  }
+}

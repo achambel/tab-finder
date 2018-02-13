@@ -11,7 +11,7 @@ function renderResults (tabsFound) {
   let list = `<div class="card-panel teal valign-wrapper">
                 <i class="medium material-icons">sentiment_very_dissatisfied</i>
                 <h5 class="center-align white-text">
-                  Title or URL not found. Enter for search the Web.
+                  ${chrome.i18n.getMessage('notFound')}
                 </h5>
               </div>`;
   if (tabsFound.length) {
@@ -87,6 +87,7 @@ document.querySelector('#query-form').addEventListener('submit', e => {
     const newURL = 'https://www.google.com/search?q=' + encodeURIComponent(text);
     chrome.tabs.create({ url: newURL });
   }
+  _gaq.push(['_trackEvent', 'enter', 'form-submit', 'Form was submitted']);
 })
 
 document.querySelector('#query').addEventListener('input', e => {
@@ -105,3 +106,17 @@ document.addEventListener('keydown', e => {
     this.close();
   }
 });
+
+document.querySelector('#donateButton').addEventListener('click', e => {
+  _gaq.push(['_trackEvent', 'donate', 'click', 'Donate button was clicked']);
+});
+
+document.title = chrome.i18n.getMessage('extName');
+
+const query = document.querySelector('#query');
+query.placeholder = chrome.i18n.getMessage('query');
+
+const donate = document.querySelector('#donateText');
+donate.textContent = chrome.i18n.getMessage('donateText');
+
+_gaq.push(['_trackEvent', 'popup', 'open', 'Popup was opened']);

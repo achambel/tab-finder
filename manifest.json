@@ -1,12 +1,13 @@
 {
   "manifest_version": 2,
-  "name": "Tab Finder",
-  "description": "Any Description",
-  "short_name": "Tab Finder",
+  "name": "__MSG_extName__",
+  "description": "__MSG_extDescription__",
+  "short_name": "__MSG_extShortName__",
   "version": "0.0.1",
   "author": "Adriano Chambel M. de Lima <acmlima.softweb@gmail.com>",
   "homepage_url": "https://github.com/achambel/tab-finder",
   "minimum_chrome_version": "55",
+  "default_locale": "en",
   "permissions": [
     "tabs"
   ],
@@ -16,7 +17,7 @@
     ]
   },
   "browser_action": {
-    "default_title": "Open Tab Finder | Ctrl+Shift+9",
+    "default_title": "__MSG_extDefaultTitle__",
     "default_popup": "popup.html"
   },
   "commands": {
@@ -24,7 +25,7 @@
       "suggested_key": {
         "default": "Ctrl+Shift+9"
       },
-      "description": "Open Tab Finder",
+      "description": "__MSG_extDefaultTitle__",
       "global": true
     }
   },
@@ -32,5 +33,6 @@
     "16": "img/16x16.png",
     "48": "img/48x48.png",
     "128": "img/128x128.png"
-  }
+  },
+  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'"
 }

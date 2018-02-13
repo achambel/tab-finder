@@ -1,0 +1,23 @@
+{
+  "extName": {
+    "message": "Buscador de pestañas"
+  },
+  "extDescription": {
+    "message": "Encuentra por pestañas abiertas simplemente escribiendo cualquier palabra."
+  },
+  "extShortName": {
+    "message": "Buscador de pestañas"
+  },
+  "extDefaultTitle": {
+    "message": "Buscador de pestañas abiertas | Ctrl+Shift+9"
+  },
+  "query": {
+    "message": "Escriba para encontrar cualquier pestaña ..."
+  },
+  "donateText": {
+    "message": "Donar"
+  },
+  "notFound": {
+    "message": "Título o URL no encontrado. Ingrese para buscar en la Web."
+  }
+}

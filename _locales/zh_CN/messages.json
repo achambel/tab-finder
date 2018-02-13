@@ -1,0 +1,23 @@
+{
+  "extName": {
+    "message": "Tab Finder"
+  },
+  "extDescription": {
+    "message": "通過打開的標籤查找只需輸入任何單詞"
+  },
+  "extShortName": {
+    "message": "Tab Finder"
+  },
+  "extDefaultTitle": {
+    "message": "打開選項卡查找器 | Ctrl+Shift+9"
+  },
+  "query": {
+    "message": "鍵入查找任何選項卡..."
+  },
+  "donateText": {
+    "message": "捐"
+  },
+  "notFound": {
+    "message": "未找到標題或網址。進入搜索網頁。"
+  }
+}

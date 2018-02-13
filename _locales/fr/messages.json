@@ -1,0 +1,23 @@
+{
+  "extName": {
+    "message": "Tab Finder"
+  },
+  "extDescription": {
+    "message": "Trouvez par des onglets ouverts en tapant n'importe quel mot."
+  },
+  "extShortName": {
+    "message": "Tab Finder"
+  },
+  "extDefaultTitle": {
+    "message": "Open Tab Finder | Ctrl+Shift+9"
+  },
+  "query": {
+    "message": "Tapez pour trouver un onglet..."
+  },
+  "donateText": {
+    "message": "Faire un don"
+  },
+  "notFound": {
+    "message": "Titre ou URL introuvable. Entrez pour rechercher sur le Web."
+  }
+}

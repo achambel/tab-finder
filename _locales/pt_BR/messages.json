@@ -1,0 +1,23 @@
+{
+  "extName": {
+    "message": "Buscador de Abas"
+  },
+  "extDescription": {
+    "message": "Procure por abas abertas apenas digitando uma palavra."
+  },
+  "extShortName": {
+    "message": "Buscador de Abas"
+  },
+  "extDefaultTitle": {
+    "message": "Abrir Buscador de Abas | Ctrl+Shift+9"
+  },
+  "query": {
+    "message": "Digite para encontrar abas abertas..."
+  },
+  "donateText": {
+    "message": "Doar"
+  },
+  "notFound": {
+    "message": "Título ou URL nāo encontrado. Pressione enter para pesquisar na web."
+  }
+}

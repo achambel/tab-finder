@@ -1,0 +1,23 @@
+{
+  "extName": {
+    "message": "Tab Finder"
+  },
+  "extDescription": {
+    "message": "Find by opened tabs just typing any word."
+  },
+  "extShortName": {
+    "message": "Tab Finder"
+  },
+  "extDefaultTitle": {
+    "message": "Open Tab Finder | Ctrl+Shift+9"
+  },
+  "query": {
+    "message": "Type for find any tab..."
+  },
+  "donateText": {
+    "message": "Donate"
+  },
+  "notFound": {
+    "message": "Title or URL not found. Enter for search the Web."
+  }
+}
